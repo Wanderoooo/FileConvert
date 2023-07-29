@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FileConvert</title>
+  <script scr="convert.js"></script>
+  <script scr="pdf.js"></script>
+  <script scr="pdf.worker.js"></script>
+</head>
+<body>
+  <h1>FileConvert</h1>
+  <h2>Upload your file below</h2>
+  <form>
+    <input type="file" id="fileInputer" name="fileInputer">
+    <br>
+    <input id="subButton" type="submit" value="Submit">
+    <br>
+    <label for="files">Choose file format to convert to</label>
+  <select id="files">
+      <option value="PDF">PDF</option>
+      <option value="PNG">PNG</option>
+      <option value="JPG">JPG</option>
+  </select>
+  </form>
+  <button id="download">Download</button>
+  <button id="redo">Redo</button>
+  <image id="converted"></image>
+</body>
+</html>
